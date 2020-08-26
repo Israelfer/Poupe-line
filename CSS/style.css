@@ -1,0 +1,67 @@
+@import url('../CSS/header.css');
+@import url('../CSS/main.css');
+@import url('../CSS/footer.css');
+@import url('../CSS/pages/contato.css');
+@import url('../CSS/pages/erro.css');
+
+:root {
+    --color-1: #1a1a2e;
+    --color-2: #16213e;
+    --color-3: #0f3460;
+    --color-4: #e94560;
+    --color-background:#fbfbfb;
+    font-size: 60%; /* controle das medidas rem */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    background-color: var(--color-background);
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+@media (min-width: 800px) {
+    body,
+    input,
+    button,
+    textarea {
+        font: 500 1.8rem Poppins;
+    }
+
+    #container {
+        width: 82%;
+    }
+
+    main {
+        gap: 100px;
+    }
+}
+
+.color4 {
+    color: var(--color-4);
+    text-decoration: none;
+}
